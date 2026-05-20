@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import UserCard from "./components/UserCard";
 
 function App() {
   return (
@@ -8,11 +9,9 @@ function App() {
        <div>
         <Navbar/>
       </div>
-      <div>
-        <Sidebar/>
-      </div>
-      <div className="w-full h-screen mt-10 text-white bg-black">
-        <h1 className="text-white text-9xl">Hello React js</h1>
+      <div className="flex justify-center items-center">
+        <UserCard name="Ashik khan" role="Admin"/>
+        <UserCard name="Shakila Akter" role="User"/>
       </div>
         
       </div>
