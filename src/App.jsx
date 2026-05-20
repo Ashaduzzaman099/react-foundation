@@ -15,7 +15,8 @@ function App() {
         <UserCard name="Shakila Akter" role="User"/>
       </div>
       <h1>{count}</h1>
-      <button className="bg-black text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300" onClick={()=> setCount(count+1)}>+</button>
+      <button className="bg-black mr-2 text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300" onClick={()=> setCount(count+1)}>++</button>
+      <button className="bg-black text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300" onClick={()=> setCount(count-1)}>--</button>
         
       </div>
     </>
