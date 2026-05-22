@@ -6,6 +6,18 @@ const user = ["Ashik khan", "Shakila Akter", "Rafiq", "Karim", "Jamal"];
 
 function App() {
   const [count, setCount] = useState(0);
+  const userList = [
+    {
+      id: 1,
+      name: "Ashik khan",
+      role: "Admin",
+    },
+    {
+      id: 2,
+      name: "Shakila Akter",
+      role: "User",
+    }
+  ]
   return (
     <>
       <div className="">
@@ -13,8 +25,12 @@ function App() {
           <Navbar />
         </div>
         <div className="flex justify-center items-center">
-          <UserCard name="Ashik khan" role="Admin" />
-          <UserCard name="Shakila Akter" role="User" />
+         {
+          userList.map((u)=>(
+            <UserCard key={u.id} name={u.name} role={u.role}/>
+          ))
+         }
+          
         </div>
         <div>
           <h1>{count}</h1>
