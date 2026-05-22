@@ -3,6 +3,7 @@ import { useState } from "react";
 import UserCard from "./components/UserCard";
 
 const user = ["Ashik khan", "Shakila Akter", "Rafiq", "Karim", "Jamal"];
+const products = []
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,6 +52,15 @@ function App() {
           {
             user.map((u)=>(
               <h1>{u}</h1>
+            ))
+          }
+          {/* If products exist, display them; otherwise, show a message */}
+          <h1 className="text-2xl bold">Product List</h1>
+          {
+            products.length === 0 ?
+            <h1>No products available</h1>
+            : products.map((p)=>(
+              <h1>{p}</h1>
             ))
           }
         </div>
