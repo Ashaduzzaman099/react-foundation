@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import { useState } from "react";
 import UserCard from "./components/UserCard";
+import InputForm from "./components/InputForm";
 
 const user = ["Ashik khan", "Shakila Akter", "Rafiq", "Karim", "Jamal"];
-const products = []
+const products = [];
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,8 +18,8 @@ function App() {
       id: 2,
       name: "Shakila Akter",
       role: "User",
-    }
-  ]
+    },
+  ];
   return (
     <>
       <div className="">
@@ -26,12 +27,12 @@ function App() {
           <Navbar />
         </div>
         <div className="flex justify-center items-center">
-         {
-          userList.map((u)=>(
-            <UserCard key={u.id} name={u.name} role={u.role}/>
-          ))
-         }
-          
+          {userList.map((u) => (
+            <UserCard key={u.id} name={u.name} role={u.role} />
+          ))}
+        </div>
+        <div>
+          <InputForm />
         </div>
         <div>
           <h1>{count}</h1>
@@ -49,20 +50,16 @@ function App() {
           </button>
         </div>
         <div className="newSection">
-          {
-            user.map((u)=>(
-              <h1>{u}</h1>
-            ))
-          }
+          {user.map((u) => (
+            <h1>{u}</h1>
+          ))}
           {/* If products exist, display them; otherwise, show a message */}
           <h1 className="text-2xl bold">Product List</h1>
-          {
-            products.length === 0 ?
+          {products.length === 0 ? (
             <h1>No products available</h1>
-            : products.map((p)=>(
-              <h1>{p}</h1>
-            ))
-          }
+          ) : (
+            products.map((p) => <h1>{p}</h1>)
+          )}
         </div>
       </div>
     </>
