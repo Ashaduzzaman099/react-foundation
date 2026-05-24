@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 import UserCard from "./components/UserCard";
 import InputForm from "./components/InputForm";
+import UseApi from "./components/UseApi";
 
 const user = ["Ashik khan", "Shakila Akter", "Rafiq", "Karim", "Jamal"];
 const products = [];
@@ -60,6 +61,11 @@ function App() {
           ) : (
             products.map((p) => <h1>{p}</h1>)
           )}
+        </div>
+
+        <div>
+          <h1 className="text-2xl mt-5">Data From Api</h1>
+          <UseApi />
         </div>
       </div>
     </>
