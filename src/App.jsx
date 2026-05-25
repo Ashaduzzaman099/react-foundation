@@ -27,15 +27,15 @@ function App() {
         <div>
           <Navbar />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex mt-5 p-5 justify-center items-center">
           {userList.map((u) => (
             <UserCard key={u.id} name={u.name} role={u.role} />
           ))}
         </div>
-        <div>
+        <div className="mt-5 p-5">
           <InputForm />
         </div>
-        <div>
+        <div className="mt-5 p-5">
           <h1>{count}</h1>
           <button
             className="text-2xl bg-black mr-2 text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300"
@@ -50,7 +50,7 @@ function App() {
             -
           </button>
         </div>
-        <div className="newSection">
+        <div className="mt-5 p-5">
           {user.map((u) => (
             <h1>{u}</h1>
           ))}
@@ -63,7 +63,7 @@ function App() {
           )}
         </div>
 
-        <div>
+        <div className="mt-5 p-5">
           <h1 className="text-2xl mt-5">Data From Api</h1>
           <UseApi />
         </div>
