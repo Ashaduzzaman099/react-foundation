@@ -11,19 +11,25 @@ function InputForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
+      <div>
+        <label htmlFor="name"></label>
+        <input className="border mb-3"
+          type="text"
+          placeholder="Type Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
 
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+      <div>
+        <label htmlFor="email"></label>
+        <input className="border"
+          type="email"
+          placeholder="Type Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
       <h3>Your Name: {name}</h3>
       <h3>Email: {email}</h3>
 
