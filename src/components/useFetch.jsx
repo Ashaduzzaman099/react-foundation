@@ -13,6 +13,6 @@ function useFetch(url) {
         })
 },[url])
 
-    return {data, loading}
+}   
 
 export default useFetch
