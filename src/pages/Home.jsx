@@ -13,11 +13,14 @@ function Home() {
     {
       id: 1,
       name: "Ashik khan",
+      email: "ashik@example.com",
       role: "Admin",
+      
     },
     {
       id: 2,
       name: "Shakila Akter",
+      email: "shakila@example.com",
       role: "User",
     },
   ];
@@ -29,7 +32,7 @@ function Home() {
         </div>
         <div className="flex mt-5 p-5 justify-center items-center">
           {userList.map((u) => (
-            <UserCard key={u.id} name={u.name} role={u.role} />
+            <UserCard key={u.id} name={u.name} email={u.email} role={u.role} />
           ))}
         </div>
         <div className="mt-5 p-5">
