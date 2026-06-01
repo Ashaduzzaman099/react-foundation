@@ -15,7 +15,6 @@ function Home() {
       name: "Ashik khan",
       email: "ashik@example.com",
       role: "Admin",
-      
     },
     {
       id: 2,
