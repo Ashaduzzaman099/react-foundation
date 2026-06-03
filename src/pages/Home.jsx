@@ -34,10 +34,10 @@ function Home() {
             <UserCard key={u.id} name={u.name} email={u.email} role={u.role} />
           ))}
         </div>
-        <div className="mt-5 p-5">
+        <div className="mt-5 p-4">
           <InputForm />
         </div>
-        <div className="mt-5 p-5">
+        <div className="mt-5 p-4">
           <h1>{count}</h1>
           <button
             className="text-2xl bg-black mr-2 text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300"
