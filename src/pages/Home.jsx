@@ -48,9 +48,7 @@ function Home() {
           <button
             className="text-2xl bg-black text-blue-500 px-5 py-2 rounded-xl hover:bg-black hover:text-white transition duration-300"
             onClick={() => setCount(count - 1)}
-          >
-            -
-          </button>
+          ></button>
         </div>
         <div className="mt-5 p-5">
           {user.map((u) => (
@@ -66,7 +64,7 @@ function Home() {
         </div>
 
         <div className="mt-5 p-5">
-          <h1 className="text-2xl mt-5">Data From Api</h1>
+          <h1 className="text-2xl mt-5">Fatch Data From Api</h1>
           <UseApi />
         </div>
       </div>
