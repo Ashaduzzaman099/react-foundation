@@ -3,15 +3,17 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import HookData from "./pages/HookData";
+import DashboardLayout from "./layouts/DashboardLayout";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/data" element={<HookData />} />
+        
+        <Route path="" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="data" element={<HookData />} />
       </Routes>
     </>
   );
